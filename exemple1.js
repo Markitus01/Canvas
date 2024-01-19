@@ -59,10 +59,10 @@
       ctx.fillRect (100, 10, 50, 100); // pinta el Rectangle
       ctx.closePath();
       
-      // ctx.beginPath();  
-      // ctx.rect(0,0,60,50);
-      // ctx.fillStyle  = 'blue'; // assignar color de l'interior
-      // ctx.fillRect (0,0,60,50);
+      ctx.beginPath();  
+      ctx.rect(0,0,60,50);
+      ctx.fillStyle  = 'blue'; // assignar color de l'interior
+      ctx.fillRect (0,0,60,50);
 
       tmp = setTimeout(f_esborrarRectangles,5000);
     }
@@ -78,11 +78,11 @@
       ctx.clearRect(100,10,50,100);
       ctx.clearRect(0,0,60,50);
       
-      // ctx.beginPath();
-      // ctx.rect(100,10,50,100);
-      // ctx.strokeStyle = 'white';
-      // ctx.lineWidth = 10;// gruix de la línia, valor x defecte 1
-      // ctx.stroke();
+      ctx.beginPath();
+      ctx.rect(100,10,50,100);
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 10;// gruix de la línia, valor x defecte 1
+      ctx.stroke();
     }
     tmp = null;
 	}
